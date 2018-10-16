@@ -30,7 +30,7 @@ const styles = theme => ({
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-between',
-    margin: '0 15px 0 15px'
+    margin: '0 10px 0 15px'
   },
   avatar: {
     backgroundColor: '#0099cc',
@@ -54,7 +54,7 @@ const styles = theme => ({
     lineHeight: '6px',
     width: '80px',
     textTransform: 'lowercase',
-    textAlign: 'left',
+    textAlign: 'center',
   },
   titlestyle: {
     fontSize: '18px',
@@ -70,7 +70,8 @@ const styles = theme => ({
   },
   hashtagstyle: {
     fontSize: '10px',
-    lineHeight: 'normal',
+    lineHeight: '6px',
+    textAlign: 'center',
     color: 'rgba(0, 0, 0, 0.54)'
   },
   logostyle: {
@@ -151,9 +152,9 @@ state = {
           <span className={classes.datestyle}>
              {date}
           </span>
-          <IconButton aria-label="sharelink">
+          <div aria-label="sharelink">
             <a target="_blank" alt="Share" href={sharelink}><ShareIcon variant="contained"></ShareIcon></a>
-          </IconButton>
+          </div>
         </CardActions>
         
       </Card>
