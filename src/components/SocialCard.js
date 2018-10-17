@@ -119,7 +119,7 @@ state = {
           }
           action={
             <IconButton>
-              <a target="_blank" className={classes.weblink} href={landingpage}><LinkIcon /></a>
+              <a target="_blank" without rel="noopener noreferrer" className={classes.weblink} href={landingpage}><LinkIcon /></a>
             </IconButton>
           }
           title={
@@ -140,20 +140,20 @@ state = {
           <div component="p">
             <p className={classes.headerstyle}>{header}</p>
             <p className={classes.descstyle}>{description}</p>
-            <p className={classes.ctastyle}><a target="_blank" alt="Learn More" href={ctalink}>{ctaphrase}</a></p>
+            <p className={classes.ctastyle}><a target="_blank" without rel="noopener noreferrer" alt="Learn More" href={ctalink}>{ctaphrase}</a></p>
           </div>
         </CardContent>
         <CardActions className={classes.actions} disableActionSpacing>
           <Badge color="secondary" badgeContent={likes} className={classes.margin}>
           
-          <a target="_blank" title="Like us on Facebook" href={sharelink + "&layout=standard&show_faces=false&width=450&action=like&colorscheme=light"}>
+          <a target="_blank" without rel="noopener noreferrer" title="Like us on Facebook" href={sharelink + "&layout=standard&show_faces=false&width=450&action=like&colorscheme=light"}>
             <FavoriteIcon variant="contained"></FavoriteIcon></a>
           </Badge>
           <span className={classes.datestyle}>
              {date}
           </span>
           <div aria-label="sharelink">
-            <a target="_blank" alt="Share" href={sharelink}><ShareIcon variant="contained"></ShareIcon></a>
+            <a target="_blank" without rel="noopener noreferrer" alt="Share" href={sharelink}><ShareIcon variant="contained"></ShareIcon></a>
           </div>
         </CardActions>
         

@@ -26,9 +26,9 @@ export default class Layout extends React.Component {
                 <img src={logo} className="App-logo" alt="logo" />
                 
                 {/* pass changeTitle as a title prop to header. When passing function/methods around you want to bind them to this  */}
-                <Header changeTitle={this.changeTitle.bind(this)} title={this.state.title} />
+                <Header title={this.state.title} />
                 <Content />
-                <Footer changeTitle={this.changeTitle.bind(this)} foottitle={this.state.foottitle} />
+                <Footer foottitle={this.state.foottitle} />
             </div>
         )
     }
